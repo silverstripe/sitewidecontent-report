@@ -20,7 +20,7 @@ class SitewideContentSubsites extends Extension
      * @param string $itemType (i.e 'Pages' or 'Files')
      * @param array  $columns  Columns
      */
-    public function updateColumns($itemType, &$columns)
+    protected function updateColumns($itemType, &$columns)
     {
         // Skip single subsite setups
         if (!Subsite::get()->count()) {
@@ -57,7 +57,7 @@ class SitewideContentSubsites extends Extension
      * @param $record
      * @param $attributes
      */
-    public function updateRowAttributes($total, $index, $record, &$attributes)
+    protected function updateRowAttributes($total, $index, $record, &$attributes)
     {
         $attributes['data-subsite-id'] = $record->SubsiteID;
     }
