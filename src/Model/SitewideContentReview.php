@@ -19,7 +19,7 @@ class SitewideContentReview extends Extension
      * @param array $columns Columns
      * @return mixed
      */
-    public function updateColumns($itemType, &$columns)
+    protected function updateColumns($itemType, &$columns)
     {
         if ($itemType !== 'Pages') {
             return;

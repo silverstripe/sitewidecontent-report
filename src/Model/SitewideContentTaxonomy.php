@@ -29,7 +29,7 @@ class SitewideContentTaxonomy extends Extension
      * @param string $itemType (i.e 'Pages' or 'Files')
      * @param array  $columns  Columns
      */
-    public function updateColumns($itemType, &$columns)
+    protected function updateColumns($itemType, &$columns)
     {
         if ($itemType !== 'Pages') {
             return;

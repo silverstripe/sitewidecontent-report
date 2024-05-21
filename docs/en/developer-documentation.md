@@ -21,7 +21,7 @@ For instance, in order to add a new Page field to the report you could add an ex
     use SilverStripe\SiteWideContentReport\SiteWideContentReport;
 
 	class MyReportExtension extends Extension {
-		public function updateColumns($itemType, &$columns) {
+		protected function updateColumns($itemType, &$columns) {
 			if(itemType !== 'Pages') {
 				return;
 			}
@@ -68,7 +68,7 @@ use SilverStripe\GridfieldQueuedExport\Forms\GridFieldQueuedExportButton;
 
 class SitewideContentReportQueuedExportExtension extends Extension
 {
-    public function updateExportButton(GridFieldComponent &$exportButton)
+    protected function updateExportButton(GridFieldComponent &$exportButton)
     {
         $exportButton = new GridFieldQueuedExportButton('buttons-after-left');
     }
