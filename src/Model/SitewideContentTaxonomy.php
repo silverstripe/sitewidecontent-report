@@ -36,7 +36,7 @@ class SitewideContentTaxonomy extends Extension
         }
 
         // Check if pages has the tags field
-        if (!self::enabled()) {
+        if (!SitewideContentTaxonomy::enabled()) {
             return;
         }
 
