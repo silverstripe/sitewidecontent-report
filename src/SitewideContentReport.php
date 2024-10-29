@@ -25,7 +25,7 @@ use SilverStripe\Forms\HeaderField;
 use SilverStripe\Reports\Report;
 use SilverStripe\SiteWideContentReport\Form\GridFieldBasicContentReport;
 use SilverStripe\Subsites\Model\Subsite;
-use SilverStripe\Versioned\Versioned;
+use SilverStripe\Versioned\Mode\Versioned;
 use SilverStripe\View\Requirements;
 
 /**
